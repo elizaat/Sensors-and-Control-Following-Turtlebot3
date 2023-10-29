@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>turtlebot3_manualpath</name>
+  <version>1.0.0</version>
+  <description>
+    Provides a manualpath for the turtlebot3
+  </description>
+  <license>BSD</license>
+  <author>Connor Flood</author>
+  <author email="connor.s.flood@student.uts.edu.au">Connor Flood</author>
+  <maintainer email="connor.s.flood@student.uts.edu.au" >Connor Flood</maintainer>
+  <url type="website">http://wiki.ros.org/turtlebot3_teleop</url>
+  <url type="emanual">http://turtlebot3.robotis.com</url>
+  <url type="repository">https://github.com/ROBOTIS-GIT/turtlebot3</url>
+  <url type="bugtracker">https://github.com/ROBOTIS-GIT/turtlebot3/issues</url>
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>rospy</depend>
+  <depend>geometry_msgs</depend>
+</package>
