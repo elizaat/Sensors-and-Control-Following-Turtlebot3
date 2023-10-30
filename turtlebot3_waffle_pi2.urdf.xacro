@@ -235,12 +235,12 @@
       <visual>
           <origin xyz="0 0 0" rpy="0 1.57 0"/> 
           <geometry>
-              <mesh filename="package://tams_apriltags/meshes/tag36_11_00000.dae"/>
+              <mesh filename="package://tams_apriltags/meshes/tag52_13_00007.dae"/>
           </geometry>
       </visual>
       <collision>
           <geometry>
-              <mesh filename="package://tams_apriltags/meshes/tag36_11_00000.dae"/>
+              <mesh filename="package://tams_apriltags/meshes/tag52_13_00007.dae"/>
           </geometry>
       </collision>
   </link>
