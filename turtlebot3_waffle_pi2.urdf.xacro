@@ -3,16 +3,6 @@
   <xacro:include filename="$(find turtlebot3_description)/urdf/common_properties.xacro"/>
   <xacro:include filename="$(find turtlebot3_description)/urdf/turtlebot3_waffle_pi2.gazebo.xacro"/>
 
-  
-<!-- 
-  <xacro:include filename="$(find tams_apriltags)/urdf/apriltag_demo2.xacro" /> 
-  <xacro:include filename="$(find tams_apriltags)/urdf/apriltag_marker.xacro" />
-  <xacro:include filename="$(find tams_apriltags)/urdf/utilities.xacro" />
-
-<property name="tag_diameter"  value="0.07" />
-  <property name="eps"           value="0.001" />
-  <property name="deg90"         value="1.571" /> -->
-
   <link name="base_footprint"/>
 
   <joint name="base_joint" type="fixed">
@@ -224,12 +214,6 @@
   </joint>
   <link name="camera_rgb_optical_frame"/>
 
-<!-- apriltag 
-  <xacro:apriltag_marker namespace="" name="apriltag_00000" parent="base_footprint"
-           family="36h11" ID="200" size="0.5">
-     <origin xyz="${tag_diameter/2+eps} 0 0.1" rpy="0 ${deg90} 0" />
-  </xacro:apriltag_marker> -->
-
 <!-- Add a model marker -->
   <link name="marker_link">
       <visual>
@@ -247,7 +231,7 @@
    
 <!-- Joint to attach the marker to the TurtleBot3 -->
   <joint name="attach_marker_joint" type="fixed">
-      <parent link="base_footprint"/>   <!-- Change "base_link" to the link you want to attach the marker to -->
+      <parent link="base_footprint"/> 
       <child link="marker_link"/>
       <origin xyz="-0.2 0 0.14" rpy="0 0 0"/>
   </joint>
